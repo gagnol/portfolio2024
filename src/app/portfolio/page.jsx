@@ -47,19 +47,7 @@ const projectLinks = [
   },
 ]
 
-const projectVideos = [
 
-  {
-    title: 'Miscelaneo',
-    links: [
-      { name: "AI Alan", img: "/alan.mp4", description: "Voice recognition", technology: "✔️Next.js", url:"https://la-bisteca.vercel.app" },
-      { name: "Financial", img: "/financial.mp4", description: "Financial advisors", technology: "✔️Next.js", url:"https://la-bisteca.vercel.app" },
-      { name: "Fitness", img: "/fitness.mp4", description: "Fitness Center", technology: "✔️Next.js", url:"https://la-bisteca.vercel.app" },
-      { name: "Nasa", img: "/Nasa.mp4", description: "Nasa", technology: "✔️API" },
-     
-    ],
-  },
-]
 
 const PortfolioPage = () => {
   return (
@@ -100,34 +88,8 @@ const PortfolioPage = () => {
             </div>
           </div>
         ))}
-        {projectVideos.map((project, index) => (
-          <div key={index} >
-            <h2 className="font-bold text-2xl my-5 mx-5">{project.title}</h2>
-            <div className="w-full px-6 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-3 py-5 ">
-              {project.links.map((link, linkIndex) => (
-                <div key={linkIndex}>
-                  <h3 className="text-lg font-semibold ">{link.name}</h3>
-                  <div className=" bg-neutral col-span relative h-[20vw] ">
-                    <video autoPlay={false} muted={false} loop={true} controls={true}
-                      className="overflow-hidden max-h-[20vw] min-w-full">
-                      <source
-                        src={link.img}
-                        type="video/mp4"
-                      />
-                    </video>
-                    <p className="p-2">{link.description}</p>
-                    <p className="p-2">{link.technology}</p>
-                      <div className="flex gap-2 justify-center">
-                      <button className="w-fit text-center btn btn-primary btn-outline mx-4">
-                        More
-                      </button>
-                      </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
+      
+       
       </div>
     </main>
   );
