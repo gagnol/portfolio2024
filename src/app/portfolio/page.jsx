@@ -18,8 +18,8 @@ const projectLinks = [
   {
     title: 'Entretaiment',
     links: [
-      { name: "Amazon", img: "/youtube1.png", description: "Ecommerce base on", technology: "✔️Next.js", url:"https://la-bisteca.vercel.app" },
-      { name: "Movies Paradise", img: "/movies.avif", description: "Imdb movies and  Tv series",
+      { name: "Rapture TV", img: "/cine4.webp", description: "Church entretaiment and podcast ", technology: "✔️Next.js", url:"https://tv-six-liard.vercel.app/" },
+      { name: "Movies Paradise", img: "/movies.avif", description: "Imdb movies and Tv series",
        technology: "✔️React-✔️API", url:"https://react-movies-paradise.vercel.app" },
     ],
   },
